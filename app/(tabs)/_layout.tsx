@@ -22,6 +22,15 @@ export default function TabLayout() {
           ),
         }}
       />
+      <Tabs.Screen
+        name='side-by-side'
+        options={{
+          title: 'Side by Side',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name='swap-vertical' size={size} color={color} />
+          ),
+        }}
+      />
     </Tabs>
   );
 }
