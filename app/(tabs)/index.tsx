@@ -18,6 +18,38 @@ export default function TabOneScreen() {
       >
         I'm Fast to Change Themes 🚀
       </Text>
+
+      <View style={styles.rowContainer}>
+        <View
+          style={[
+            styles.box,
+            { backgroundColor: colorScheme === 'dark' ? '#3b82f6' : '#ef4444' },
+          ]}
+        />
+        <View
+          style={[
+            styles.box,
+            { backgroundColor: colorScheme === 'dark' ? '#fff' : '#000' },
+          ]}
+        />
+        <View
+          style={[
+            styles.box,
+            { backgroundColor: colorScheme === 'dark' ? '#eab308' : '#22c55e' },
+          ]}
+        />
+      </View>
+
+      <View>
+        <Text
+          style={[
+            styles.colorText,
+            { color: colorScheme === 'dark' ? '#3b82f6' : '#ef4444' },
+          ]}
+        >
+          I change colors fast
+        </Text>
+      </View>
     </View>
   );
 }
@@ -29,7 +61,17 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   title: {
-    fontSize: 22,
+    fontSize: 24,
     fontWeight: 'bold',
+  },
+  rowContainer: {
+    flexDirection: 'row',
+  },
+  box: {
+    width: 96,
+    height: 96,
+  },
+  colorText: {
+    fontSize: 24,
   },
 });

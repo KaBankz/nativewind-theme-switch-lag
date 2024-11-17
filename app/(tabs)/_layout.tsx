@@ -8,14 +8,18 @@ export default function TabLayout() {
         name='index'
         options={{
           title: 'Fast',
-          tabBarIcon: ({ color }) => <Ionicons name='rocket' color={color} />,
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name='rocket' size={size} color={color} />
+          ),
         }}
       />
       <Tabs.Screen
         name='two'
         options={{
           title: 'Slow',
-          tabBarIcon: ({ color }) => <Ionicons name='stop' color={color} />,
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name='refresh' size={size} color={color} />
+          ),
         }}
       />
     </Tabs>
