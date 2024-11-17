@@ -7,6 +7,15 @@ export default function TabLayout() {
       <Tabs.Screen
         name='index'
         options={{
+          title: 'Side by Side',
+          tabBarIcon: ({ color, size }) => (
+            <Ionicons name='swap-vertical' size={size} color={color} />
+          ),
+        }}
+      />
+      <Tabs.Screen
+        name='fast'
+        options={{
           title: 'Fast',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name='rocket' size={size} color={color} />
@@ -14,20 +23,11 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name='two'
+        name='slow'
         options={{
           title: 'Slow',
           tabBarIcon: ({ color, size }) => (
             <Ionicons name='refresh' size={size} color={color} />
-          ),
-        }}
-      />
-      <Tabs.Screen
-        name='side-by-side'
-        options={{
-          title: 'Side by Side',
-          tabBarIcon: ({ color, size }) => (
-            <Ionicons name='swap-vertical' size={size} color={color} />
           ),
         }}
       />
