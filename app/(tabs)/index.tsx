@@ -2,6 +2,7 @@ import { StyleSheet, Text, View, useColorScheme } from 'react-native';
 
 export default function SideBySideScreen() {
   const colorScheme = useColorScheme();
+
   return (
     <>
       {/* NativeWind */}
@@ -22,6 +23,7 @@ export default function SideBySideScreen() {
           </Text>
         </View>
       </View>
+
       {/* StyleSheet */}
       <View
         style={{
